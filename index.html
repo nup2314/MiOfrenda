@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Ofrenda Interactiva</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>🌼 Mi Ofrenda Interactiva 🌼</h1>
+      <p>Un recuerdo que vive en el corazón</p>
+    </header>
+
+    <div class="ofrenda">
+      <button id="anterior" class="flecha izquierda" aria-label="Foto anterior">
+        &#10094;
+      </button>
+
+      <div class="marco">
+        <img id="imagenOfrenda" src="" alt="Fotografía del recuerdo">
+        <div class="indicadores" id="puntos"></div>
+      </div>
+
+      <button id="siguiente" class="flecha derecha" aria-label="Foto siguiente">
+        &#10095;
+      </button>
+    </div>
+
+    <div class="descripcion" id="descripcion">
+      Un recuerdo que vive en el corazón
+    </div>
+
+    <!-- ===== MÚSICA: va incluida en musica.js ===== -->
+    <div class="musica">
+      <p>🎵 Música de fondo</p>
+      <audio id="reproductor" controls loop></audio>
+    </div>
+
+  </div>
+
+  <script src="musica.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
